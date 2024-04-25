@@ -8,25 +8,35 @@
 </head>
 <body>
 
-   <form id="form"  action="https://formspree.io/f/mdoqyvra"
-   method="POST">
    <div class="padre"> 
-    <fieldset>
+    <form id="form"  action="https://formspree.io/f/mdoqyvra"
+   method="POST" class="form">
+   
       <h2 class="fs-title">Crea tu cuenta</h2>
-      <div class="input">
+      <div class="input-box">
       <input type="text" name="name" placeholder= "Nombre" required/>
+      </div>
+      <div class="input-box">
       <input type="text" name="lastname" placeholder= "Apellido"required/>
-      <input type="text" name="email" placeholder="Correo" required/>
-      <input type="password" name="pass" placeholder="Contraseña" required/>
-      <input type="password" name="cpass" placeholder="Confirme la contraseña" required/>
     </div>
+    <div class="input-box">
+      <input type="text" name="email" placeholder="Correo" required/>
+    </div>
+    <div class="input-box">
+      <input type="password" name="pass" placeholder="Contraseña" required/>
+    </div>
+    <div class="input-box">
+      <input type="password" name="confpass" placeholder="Confirmar contraseña" required/>
+    </div>
+    <div class="check-box">
       <label for="checkbox">Acepto terminos y condiciones*</label>
-      <input type="checkbox" name="checkbox" id="checkbox" required>     
-     <button type="submit">Enviar</button>
-    </fieldset>
-</div>
+      <input type="checkbox" name="checkbox" id="checkbox" required>
+    </div>     
+     <button type="submit" class="btn">Registrarse</button>
+
    
   </form> 
+</div>
 </body>
 </html>
 

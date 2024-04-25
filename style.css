@@ -4,53 +4,73 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-html{
-    height: 100%;
-    background-image: url(/images/fondo2.jpg);
-    background-repeat: no-repeat;
+    font-family: montserrat;
 }
 
 body {
-   font-family: montserrat;
+   display: flex;
+   justify-content: center;
    align-items: center;
-   text-align: center;
+   min-height: 100vh;
+   background: url(/images/fondo2.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
 }
 
-form{
-    display: flex;
-    background: 
-		linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
-    width: 70%;
+.padre{
+    width: 60%;
+    border: 2px solid rgb(255, 255, 255, 0.2);
     color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.padre h2 {
+    font-size: 36px;
+    text-align: center;  
+    margin-top: 10px;  
+}
+
+.padre .input-box{
     position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    padding: 5px;    
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
     text-align: center;
-    margin: 5px 10px 5px 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    /* padding: 20px 45px 20px 20px; */
 }
 
-form input {
-    background-color: #080710;
+.input-box input::placeholder{
     color: #fff;
-    background: 
-		linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
-
-    padding-top: 10px;
 }
 
-.input{
-    gap: 5px;
-    margin: 5px;
+.padre .check-box{
+   display: flex;
+   justify-content: space-evenly;
+   font-size: 15px;
+   margin: 15px;
+
 }
 
-fieldset {
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-}
-
-button {
-  width: 30%;
-  padding: 4px;
-  color:  ;
+.btn{
+  width: 90%;
+  height: 45px;
+  border: none;
+  outline: none;
+ border-radius: 40px;
+ box-shadow: 0 0 10px rgb(0, 0, .1);
+ font-size: 16px;
+ font-weight: 600;
+ margin: 15px;
 }
