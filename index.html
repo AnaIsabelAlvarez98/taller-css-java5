@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+   <form id="form"  action="https://formspree.io/f/mdoqyvra"
+   method="POST">
+   <div class="padre"> 
+    <fieldset>
+      <h2 class="fs-title">Crea tu cuenta</h2>
+      <div class="input">
+      <input type="text" name="name" placeholder= "Nombre" required/>
+      <input type="text" name="lastname" placeholder= "Apellido"required/>
+      <input type="text" name="email" placeholder="Correo" required/>
+      <input type="password" name="pass" placeholder="Contraseña" required/>
+      <input type="password" name="cpass" placeholder="Confirme la contraseña" required/>
+    </div>
+      <label for="checkbox">Acepto terminos y condiciones*</label>
+      <input type="checkbox" name="checkbox" id="checkbox" required>     
+     <button type="submit">Enviar</button>
+    </fieldset>
+</div>
+   
+  </form> 
+</body>
+</html>
+
